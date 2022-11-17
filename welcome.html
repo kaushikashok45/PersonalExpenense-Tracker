@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome {{session.username}}</title>
+    <link rel="stylesheet" type="text/css" href="./../css/welcome.css">
+    <script src="./../js/welcome.js"></script>
+</head>
+<body>
+    <center>
+        <H1>Welcome {{session.username}}</H1>
+    </center>
+    <div id="contentWrapper" class="flex-col">
+        <div id="contentRow1"  class="flex-row">
+            <div id="limitsWrapper" class="flex-col">
+                <div id="incomeWrapper" class="box-border"><h3 class="qn">Your income:</h3><h4 class="ans">$500</h4></div>
+                <div id="incomeWrapper" class="box-border"><h3 class="qn">Your spending limit:</h3><h4 class="ans">$499</h4></div>
+            </div>
+            <div id="expensesWrapper" class="box-border">
+               <h2>Expenses</h2>
+               <div id="addExpenseSubFormBtn" class="addIcon" onclick="writeSubForm()">+</div>
+               <div id="addExpenseBtn" class="addBtn">Add Expense(s)</div>
+            </div>
+            <div id="revenuesWrapper" class="box-border">
+                <h2>Revenue</h2>
+                <div id="addRevenueSubFormBtn" class="addIcon" onclick="writeRevenueSubForm()">+</div>
+                <div id="addRevenueBtn" class="addBtn">Add Revenue</div>
+            </div>
+        </div>
+        <div id="contentRow2" class="flex-row">
+            <div id="filtersWrapper"></div>
+            <div id="transactionsTableWrapper" class="box-border"></div>
+        </div>
+        <div id="contentRow3">
+          
+        </div>
+    </div>
+</body>
+</html>
